@@ -11,7 +11,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fal } from '@fortawesome/pro-light-svg-icons'
 
 // Load icons into
-library.add(fat, fal, fas, fad, far, fab)
+library.add(fat, fal, fas, far, fab)
 
 /**
  * Icon factory utility.
