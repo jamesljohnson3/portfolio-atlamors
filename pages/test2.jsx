@@ -47,7 +47,7 @@ export default function MyComponent() {
                   </span>
                 </p>
               </p>
-              <FormForm
+              <form
                 sendSubmissionsTo="custom"
                 sendSubmissionsToEmail="your@email.com"
                 name="My form"
@@ -141,12 +141,12 @@ export default function MyComponent() {
                   required={true}
                 />
                 <div className="relative shrink-0 box-border flex flex-row ml-[-401px] max-w-[5px]">
-                  <FormSubmitButton
+                  <button
                     text="Join the waitlist"
                     className="bg-[rgba(32,19,71,1)] caret-[rgb(58,58,56)] text-white cursor-pointer block text-[14px] grid-cols-[auto] outline-[rgba(0,0,0,0)] relative decoration-[rgb(58,58,56)] text-ellipsis origin-[81.3047px_25px] select-none font-semibold min-h-[61px] w-auto self-center min-w-[166px] -ml-px mr-auto pt-[10px] pb-[12px] px-[17.6px] rounded-[48px] border-none border-[rgb(58,58,56)] border-0 inset-[0px_0px_0px_237.391px] max-sm:min-w-[174px] max-sm:px-0"
                   />
                 </div>
-              </FormForm>
+              </form>
               <div className="text-[14px] caret-[rgb(58,58,56)] text-[rgb(58,58,56)] grid-cols-[auto] min-h-[auto] min-w-[auto] outline-[rgb(58,58,56)] decoration-[rgb(58,58,56)] text-ellipsis origin-[200px_26.5px] select-none flex flex-col items-stretch mt-[12px] mx-auto border-[rgb(58,58,56)] border-0 max-sm:w-screen max-sm:max-w-[274px] max-sm:mx-auto">
                 <div className="text-[12px] caret-[rgb(97,97,97)] text-[rgb(97,97,97)] flex outline-[rgb(97,97,97)] text-center decoration-[rgb(97,97,97)] origin-[200px_26.5px] select-none max-w-[381px] pt-[16px] pb-[10px] px-[2px] border-[rgb(97,97,97)] border-0 max-sm:text-[12px]">
                   <p>Get email updates when we release new features.</p>
@@ -226,7 +226,7 @@ export default function MyComponent() {
                 </div>
                 <div className="text-[14px] caret-[rgb(97,97,97)] text-[rgb(97,97,97)] grid-cols-[auto] min-h-[auto] min-w-[auto] outline-[rgb(97,97,97)] decoration-[rgb(97,97,97)] text-ellipsis origin-[200px_26.5px] select-none flex text-center max-w-[381px] mt-[12px] pt-[16px] px-[2px] border-[rgb(97,97,97)] border-0 max-sm:w-screen max-sm:max-w-[274px] max-sm:text-[12px] max-sm:mx-auto">
                   <p>
-                    We'll send you email updates when we release new features
+                    We will send you email updates when we release new features
                   </p>
                 </div>
               </div>
