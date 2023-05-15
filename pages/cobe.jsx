@@ -2,7 +2,7 @@ import createGlobe from "cobe";
 import { useEffect, useRef, useState } from "react";
 import { useSpring } from 'react-spring';
 import * as THREE from 'three';
-import HeroBg		from '../components/blocks/hero.bg/bg-color-1';
+import css from '../../styles/structure/footer.module.scss'
 
 
 export default function Cobe() {
@@ -144,5 +144,5 @@ export default function Cobe() {
   );
 }
 
-<><Cobe /><HeroBg /></>
+<><div className={css.container}><Cobe /></div></>
       ;
