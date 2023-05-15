@@ -2,7 +2,6 @@ import createGlobe from "cobe";
 import { useEffect, useRef, useState } from "react";
 import { useSpring } from 'react-spring';
 import * as THREE from 'three';
-import css from '../../styles/structure/footer.module.scss'
 
 
 export default function Cobe() {
@@ -143,5 +142,5 @@ export default function Cobe() {
   </div>
   );
 }
-<div className={css.container}><Cobe /></div>
-      ;
+
+<Cobe />;
