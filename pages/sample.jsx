@@ -13,14 +13,20 @@ import colors 		from '../content/index/_colors.json'
 export default function HomePage() {
 
 	return (
-		<>
+		<><>
 			<Color colors={colors} />
 			<Hero />
-			<>
-      <span className="span">
-        <p>Design, test and manage your products better</p>
-      </span>
-      <style jsx>{`
+
+			<span className="span">
+				<p>Design, test and manage your products better</p>
+			</span>
+
+			{/* <Looking /> */}
+			<FeaturedProjects />
+			<About />
+			<Technical />
+			{/* <Career /> */}
+		</><> <style jsx>{`
         .span {
           display: block;
           border-bottom: 0px solid;
@@ -48,12 +54,6 @@ export default function HomePage() {
           }
         }
       `}</style>
-    </>
-			{/* <Looking /> */}
-			<FeaturedProjects />
-			<About />
-			<Technical />
-			{/* <Career /> */}
-		</>
+			</></>
 	);
 }
