@@ -8,6 +8,11 @@ import SetGridGap from '../components/utils/set.grid.util'
 // Structure
 import Layout from '../components/layout/layout'
 
+import { builder } from '@builder.io/react'
+
+builder.init('ba26b1f01a7a45cdbbff41a67447be22')
+
+
 // CSS reset (https://github.com/elad2412/the-new-css-reset.git)
 import "../node_modules/the-new-css-reset/css/reset.css"
 
@@ -32,6 +37,8 @@ import '../styles/css/global.css'
  * @param {?} pageProps
  * @returns
  */
+
+
 export default function MyApp({ Component, pageProps }) {
 	return (
 		<>
