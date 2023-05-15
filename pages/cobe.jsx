@@ -144,5 +144,5 @@ export default function Cobe() {
   );
 }
 
-<><Cobe /><HeroBg theme="bg-color-1" /></>
+<><Cobe /><HeroBg /></>
       ;
