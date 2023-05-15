@@ -16,9 +16,39 @@ export default function HomePage() {
 		<>
 			<Color colors={colors} />
 			<Hero />
-			<span className="block h-auto grow-0 max-h-[164px] text-[rgba(22,11,54,1)] text-[64px] mt-[69px] border-solid border-0 max-sm:text-[rgba(22,11,54,1)] max-sm:ml-[-50px] max-sm:text-[30px] max-sm:mt-0">
-      <p>Design, test and manage your products better</p>
-    </span>
+			<>
+      <span className="span">
+        <p>Design, test and manage your products better</p>
+      </span>
+      <style jsx>{`
+        .span {
+          display: block;
+          border-bottom: 0px solid;
+          border-left: 0px solid;
+          border-right: 0px solid;
+          border-top: 0px solid;
+          height: auto;
+          flex-grow: 0;
+          max-height: 164px;
+          color: rgba(22, 11, 54, 1);
+          font-family: "Play", sans-serif;
+          font-size: 64px;
+          margin-top: 69px;
+          border-style: solid;
+          border-width: 0px;
+          text-shadow: 1px 1px 0 rgba(233, 0, 255, 0.17);
+        }
+        @media (max-width: 640px) {
+          .span {
+            color: rgba(22, 11, 54, 1);
+            margin-left: -50px;
+            font-size: 30px;
+            margin-top: 0;
+            text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.17);
+          }
+        }
+      `}</style>
+    </>
 			{/* <Looking /> */}
 			<FeaturedProjects />
 			<About />
