@@ -118,7 +118,7 @@ export default function MyComponent() {
                   },
                 ]}
               >
-                <FormInput
+                <input
                   name="visitor_id"
                   value="visitor_id"
                   id="visitor_id"
@@ -127,14 +127,14 @@ export default function MyComponent() {
                   defaultValue="visitor_id"
                   className="mt-[10px]"
                 />
-                <FormInput
+                <input
                   name="input2"
                   placeholder=""
                   type="hidden"
                   defaultValue="unlimitednow"
                   className="mt-[10px]"
                 />
-                <FormInput
+                <input
                   name="email"
                   placeholder="Your Email"
                   className="caret-[rgb(58,58,56)] text-[rgb(58,58,56)] block text-[18px] min-h-[auto] outline-[rgb(58,58,56)] decoration-[rgb(58,58,56)] text-ellipsis origin-[200px_25px] select-none w-full shadow-[1px_1px_23px_-3px_rgba(138,138,138,1)] opacity-100 pl-[20px] pr-[172px] pt-[10px] pb-[12px] rounded-[48px] border-[rgba(0,0,0,0)] border-solid border-[5px] max-sm:text-[14px] max-sm:opacity-100 max-sm:shadow-[1px_1px_19px_-7px_rgba(0,0,0,1)] max-sm:border max-sm:ml-0 max-sm:pl-[10px] max-sm:border-[rgba(0,0,0,0)]"
