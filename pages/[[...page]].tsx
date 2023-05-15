@@ -8,7 +8,7 @@ export async function getStaticProps({ params }: GetStaticPropsContext<{ page: s
   const page = await builder
     .get('page', {
       userAttributes: {
-        urlPath: '/' + (params?.page?.join('/') || ''),
+        urlPath: '/test' + (params?.page?.join('/') || ''),
       },
     })
     .toPromise();
