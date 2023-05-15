@@ -143,6 +143,5 @@ export default function Cobe() {
   </div>
   );
 }
-
-<><div className={css.container}><Cobe /></div></>
+<div className={css.container}><Cobe /></div>
       ;
