@@ -10,7 +10,7 @@ import Layout from '../components/layout/layout'
 
 import { builder } from '@builder.io/react'
 
-builder.init('ba26b1f01a7a45cdbbff41a67447be22')
+builder.init('a480daf8d0e34c12bcc3f48f0079ed71')
 
 
 // CSS reset (https://github.com/elad2412/the-new-css-reset.git)
