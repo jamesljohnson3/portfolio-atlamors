@@ -8,6 +8,11 @@ import SetGridGap from '../components/utils/set.grid.util'
 // Structure
 import Layout from '../components/layout/layout'
 
+import { builder } from '@builder.io/react'
+
+builder.init('a480daf8d0e34c12bcc3f48f0079ed71')
+
+
 // CSS reset (https://github.com/elad2412/the-new-css-reset.git)
 import "../node_modules/the-new-css-reset/css/reset.css"
 
@@ -24,6 +29,7 @@ import '../node_modules/devicon/devicon.min.css'
 // Global css
 import '../styles/css/variables.css'
 import '../styles/css/global.css'
+import '../styles/css/scrollbar.css';
 
 /**
  * _app.jsx
@@ -32,6 +38,8 @@ import '../styles/css/global.css'
  * @param {?} pageProps
  * @returns
  */
+
+
 export default function MyApp({ Component, pageProps }) {
 	return (
 		<>
