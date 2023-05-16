@@ -56,9 +56,18 @@ export default function Page({ page }: InferGetStaticPropsType<typeof getStaticP
 
   return (
  
-             <><Head>
-
-    </Head><BuilderComponent model="page" content={page} />      <Box />
+             <>      <Head>
+             {/* maximum-scale 1 meta tag need to prevent ios input focus auto zooming */}
+             <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1 maximum-scale=1"
+             />
+             <title>Unlimit Potential®</title>
+             <meta
+               name="description"
+               content="Designed to help you manage the bigger picture. Unlimited Now   "
+             />
+           </Head><BuilderComponent model="page" content={page} />      <Box />
 </>
   );
 }
