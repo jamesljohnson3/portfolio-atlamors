@@ -5,7 +5,7 @@ import {
   useBreakpointValue,
   VisuallyHidden,
 } from '@chakra-ui/react'
-import AccessibleLink from '@/components/link'
+import AccessibleLink from '../../components/link'
 import React from 'react'
 
 export interface LogoProps {

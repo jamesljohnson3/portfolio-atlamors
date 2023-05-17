@@ -16,18 +16,16 @@ import {
   useUpdateEffect,
 } from '@chakra-ui/react'
 import { AnimatePresence, motion, useElementScroll } from 'framer-motion'
-import useRouteChanged from '@/hooks/use-route-changed'
-import { getRoutes } from '@/layouts/mdx'
+import useRouteChanged from '../hooks/use-route-changed'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 import * as React from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { RemoveScroll } from 'react-remove-scroll'
-import Logo from '@/components/layout/logo'
+import Logo from '../components/layout/logo'
 import { SidebarContent } from './sidebar/sidebar'
-import { t } from '@/docs/utils/i18n'
 
-import headerNav from '@/data/header-nav'
+import headerNav from '../data/header-nav'
 
 interface NavLinkProps extends CenterProps {
   label: string
@@ -161,7 +159,6 @@ export function MobileNavContent(props: MobileNavContentProps) {
               >
                 <SidebarContent
                   pathname={pathname}
-                  routes={getRoutes(asPath)}
                 />
               </ScrollView>
             </Flex>
