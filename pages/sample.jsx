@@ -9,7 +9,25 @@ import { FallInPlace } from '../components/fall-in-place'
 import { Em, Br } from '../components/typography'
 import { ButtonLink } from '../components/link'
 import Image from 'next/image'
-
+import {
+  FiBox,
+  FiCheck,
+  FiCode,
+  FiCopy,
+  FiFlag,
+  FiGrid,
+  FiLock,
+  FiSearch,
+  FiSliders,
+  FiSmile,
+  FiTerminal,
+  FiThumbsUp,
+  FiToggleLeft,
+  FiTrendingUp,
+  FiArrowRight,
+  FiUserPlus,
+  FiChevronRight,
+} from 'react-icons/fi'
 import Color 		from '../components/utils/page.colors.util'
 
 import colors 		from '../content/index/_colors.json'
