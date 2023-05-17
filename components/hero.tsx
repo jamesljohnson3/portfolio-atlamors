@@ -4,7 +4,6 @@ import {
   HTMLChakraProps,
   ThemingProps,
 } from '@chakra-ui/react'
-import PageTitle from './page-title'
 
 interface HeroProps
   extends Omit<HTMLChakraProps<'div'>, 'children' | 'title'>,
