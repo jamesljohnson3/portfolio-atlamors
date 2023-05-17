@@ -11,10 +11,10 @@ import {
   useCommandState,
 } from '@saas-ui/command-bar'
 
-import coreSidebar from '@/data/core-sidebar'
-import componentsSidebar from '@/data/components-sidebar'
-import hookSidebar from '@/data/hooks-sidebar'
-import proSidebar from '@/data/pro-sidebar'
+import coreSidebar from '../../data/core-sidebar'
+import componentsSidebar from '../../data/components-sidebar'
+import hookSidebar from '../../data/hooks-sidebar'
+import proSidebar from '../../data/pro-sidebar'
 import { useRouter } from 'next/router'
 import { Fragment } from 'react'
 
