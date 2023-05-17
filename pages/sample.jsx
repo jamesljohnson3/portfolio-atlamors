@@ -4,7 +4,7 @@ import About 		from '../components/sections/index/about'
 import Technical 	from '../components/sections/index/technical'
 import Career 		from '../components/sections/index/career'
 import FeaturedProjects	from '../components/sections/projects/featured'
-import Hero from '../components/hero'
+import Hero2 from '../components/hero'
 
 import Color 		from '../components/utils/page.colors.util'
 
@@ -61,7 +61,7 @@ export default function HomePage() {
               position="relative"
               zIndex="2"
             >
-              <Hero
+              <Hero2
                 as={Stack}
                 id="home"
                 alignItems="center"
