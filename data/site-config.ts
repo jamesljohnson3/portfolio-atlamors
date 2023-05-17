@@ -1,5 +1,5 @@
-import SaasUIGlyph from '@/components/saas-ui-glyph'
-import Logo from '../components/saas-ui'
+import SaasUIGlyph from '../components/saas-ui-glyph'
+import Logo from '../components/layout/logo'
 const baseUrl = 'https://github.com/saas-js/saas-ui'
 
 const siteConfig = {
