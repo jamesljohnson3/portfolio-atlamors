@@ -13,18 +13,17 @@ import { FaDiscord, FaGithub, FaTwitter } from 'react-icons/fa'
 
 import { useRouter } from 'next/router'
 
-import headerNav from '@/data/header-nav'
-import NavLink from '@/components/nav-link'
-import { useScrollSpy } from '@/hooks/use-scrollspy'
-import { MobileNavButton } from '@/docs/components/mobile-nav'
-import { MobileNavContent } from '@/docs/components/mobile-nav'
+import headerNav from '../../data/header-nav'
+import NavLink from '../../components/nav-link'
+import { useScrollSpy } from '../../hooks/use-scrollspy'
+import { MobileNavButton } from '../../components/mobile-nav'
+import { MobileNavContent } from '../../components/mobile-nav'
 import { useDisclosure, useUpdateEffect } from '@chakra-ui/react'
 
 import ThemeToggle from './theme-toggle'
-import { ProductLaneLogo } from '../logos/productlane'
 import { SearchInput, useHotkeys } from '@saas-ui/react'
 
-import { GlobalSearch } from '../global-search/global-search'
+import { GlobalSearch } from '../../components/global-search/global-search'
 
 const Header = () => {
   const mobileNav = useDisclosure()
