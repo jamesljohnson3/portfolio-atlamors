@@ -23,7 +23,6 @@ import * as React from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { RemoveScroll } from 'react-remove-scroll'
 import Logo from '../components/layout/logo'
-import { SidebarContent } from './sidebar/sidebar'
 
 import headerNav from '../data/header-nav'
 
@@ -157,9 +156,7 @@ export function MobileNavContent(props: MobileNavContentProps) {
                   setShadow(scrolled ? 'md' : undefined)
                 }}
               >
-                <SidebarContent
-                  pathname={pathname}
-                />
+                Hello
               </ScrollView>
             </Flex>
           </motion.div>
