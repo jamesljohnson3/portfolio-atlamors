@@ -45,6 +45,8 @@
 		"@tailwindcss/typography": "^0.5.7",
 		"@testing-library/react": "^13.3.0",
 		"@chakra-ui/cli": "^2.3.1",
+		"@saas-ui/command-bar": "^0.1.2",
+
     "@chakra-ui/react": "^2.5.5",
     "@changesets/cli": "^2.25.2",
     "@clerk/clerk-react": "^3.5.1",
