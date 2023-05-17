@@ -126,7 +126,7 @@ export default function HomePage() {
                     </ButtonLink>
                   </ButtonGroup>
                 </FallInPlace>
-              </Hero>
+              </Hero2>
               <Box
                 width="80vw"
                 maxW="1100px"
