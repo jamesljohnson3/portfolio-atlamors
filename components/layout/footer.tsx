@@ -4,44 +4,20 @@ import {
 	SimpleGrid,
 	Container,
 	Text,
-	Stack,
-	Flex,
-	HStack,
+	ResponsiveValue,
   } from '@chakra-ui/react'
   
-  import { Link, LinkProps } from '@saas-ui/react'
-  
-  import siteConfig from '../../data/config'
+  import Link, { LinkProps } from '../../components/link'
   
   export interface FooterProps extends BoxProps {
-	columns?: number
+	columns?: ResponsiveValue<number>
   }
   
-  export const Footer: React.FC<FooterProps> = (props) => {
-	const { columns = 2, ...rest } = props
+  const Footer = ({ children, columns = 4, ...rest }: FooterProps) => {
 	return (
-	  <Box bg="white" _dark={{ bg: 'gray.900' }} {...rest}>
+	  <Box {...rest}>
 		<Container maxW="container.2xl" px="8" py="8">
-		  <SimpleGrid columns={columns}>
-			<Stack spacing="8">
-			  <Stack alignItems="flex-start">
-				<Flex>
-				  <Box as={siteConfig.logo} flex="1" height="32px" />
-				</Flex>
-				<Text fontSize="md" color="muted">
-				  {siteConfig.seo.description}
-				</Text>
-			  </Stack>
-			  <Copyright>{siteConfig.footer.copyright}</Copyright>
-			</Stack>
-			<HStack justify="flex-end" spacing="4" alignSelf="flex-end">
-			  {siteConfig.footer?.links?.map(({ href, label }) => (
-				<FooterLink key={href} href={href}>
-				  {label}
-				</FooterLink>
-			  ))}
-			</HStack>
-		  </SimpleGrid>
+		  <SimpleGrid columns={columns}>{children}</SimpleGrid>
 		</Container>
 	  </Box>
 	)
@@ -52,36 +28,41 @@ import {
 	children: React.ReactNode
   }
   
-  export const Copyright: React.FC<CopyrightProps> = ({
-	title,
-	children,
-  }: CopyrightProps) => {
+  export const Copyright = ({ title, children }: CopyrightProps) => {
 	let content
 	if (title && !children) {
 	  content = `&copy; ${new Date().getFullYear()} - ${title}`
 	}
 	return (
-	  <Text color="muted" fontSize="sm">
+	  <Text color="gray.400" fontSize="sm">
 		{content || children}
 	  </Text>
 	)
   }
   
-  export const FooterLink: React.FC<LinkProps> = (props) => {
-	const { children, ...rest } = props
+  export const FooterLink = ({ children, ...props }: LinkProps) => {
 	return (
 	  <Link
-		color="muted"
+		{...props}
+		color="gray.400"
 		fontSize="sm"
 		textDecoration="none"
 		_hover={{
 		  color: 'white',
 		  transition: 'color .2s ease-in',
 		}}
-		{...rest}
 	  >
 		{children}
 	  </Link>
 	)
   }
+  
+  export interface NavProps {
+	title: string
+	items: Array<any>
+  }
+  
+  export const Nav = ({ title, items }: NavProps) => {}
+  
+  export default Footer
   
