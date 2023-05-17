@@ -5,6 +5,10 @@ import Technical 	from '../components/sections/index/technical'
 import Career 		from '../components/sections/index/career'
 import FeaturedProjects	from '../components/sections/projects/featured'
 import Hero2 from '../components/hero'
+import { FallInPlace } from '../components/fall-in-place'
+import { Em, Br } from '../components/typography'
+import { ButtonLink } from '../components/link'
+import Image from 'next/image'
 
 import Color 		from '../components/utils/page.colors.util'
 
@@ -91,11 +95,9 @@ export default function HomePage() {
                 <FallInPlace delay={0.8} initialInView>
                   <HStack pt="12" pb="12" spacing="8" justifyContent="center">
                     <HStack>
-                      <ReactLogo height="24px" />
-                      <Text fontWeight="medium">React</Text>
+Logo here                      <Text fontWeight="medium">React</Text>
                     </HStack>
-                    <ChakraLogo height="24px" />
-                  </HStack>
+                    Logo here                  </HStack>
                 </FallInPlace>
                 <FallInPlace delay={1} initialInView>
                   <ButtonGroup spacing={4} alignItems="center">
