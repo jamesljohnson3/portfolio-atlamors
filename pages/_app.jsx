@@ -1,8 +1,8 @@
 // Core packages
 import { Analytics } from '@vercel/analytics/react';
 import { LazyMotion, domAnimation } from "framer-motion"
-import theme from '../styles/theme'
 import { SaasProvider, ModalsProvider } from '@saas-ui/react'
+import theme from '../theme'
 
 // Utils
 import SetGridGap from '../components/utils/set.grid.util'
@@ -44,7 +44,7 @@ import '../styles/css/scrollbar.css';
 
 export default function MyApp({ Component, pageProps }) {
 	return (
-		<>    <SaasProvider theme={theme} linkComponent={Link}>
+		<>    <SaasProvider theme={theme} >
         <ModalsProvider>
 
 		<LazyMotion features={domAnimation}>
